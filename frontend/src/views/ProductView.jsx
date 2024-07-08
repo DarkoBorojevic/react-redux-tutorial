@@ -10,7 +10,7 @@ import {
   Card,
   ListGroupItem
 } from 'react-bootstrap';
-// import products from "../products";
+import products from "../products";
 
 const ProductView = () => {
   const [product, setProduct] = useState({});
@@ -20,7 +20,8 @@ const ProductView = () => {
 
   useEffect(() => {
     const fetchProduct = async () => {
-      const { data } = await axios.get(`/api/products/${productId}`);
+      // const { data } = await axios.get(`/api/products/${productId}`);
+      const data = await products.find((prod) => prod._id === productId);
       setProduct(data);
     }
 
@@ -35,7 +36,7 @@ const ProductView = () => {
         Go Back
       </Link>
       <Row>
-        <Col md={5}>
+        <Col md={4}>
           <Image src={product.image} alt={product.name} fluid />
         </Col>
         <Col md={4}>
@@ -48,7 +49,7 @@ const ProductView = () => {
             </ListGroupItem>
           </ListGroup>
         </Col>
-        <Col md={3}>
+        <Col md={4}>
           <Card>
             <ListGroup variant='flush'>
               <ListGroupItem>
