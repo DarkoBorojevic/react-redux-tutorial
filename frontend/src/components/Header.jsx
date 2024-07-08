@@ -7,26 +7,27 @@ import {
     NavbarCollapse, 
     NavLink 
 } from 'react-bootstrap';
-import { Link } from "react-router-dom";
-import { FaShoppingCart, FaUser } from 'react-icons/fa';
+import { LinkContainer } from 'react-router-bootstrap';
+import { FaUser } from 'react-icons/fa';
 
 const Header = () => {
   return (
     <header>
         <Navbar bg='success' variant='dark' expand='lg' collapseOnSelect>
             <Container>
-                <NavbarBrand href='/'>
-                    Redux tutorial
-                </NavbarBrand>
+                <LinkContainer to='/'>
+                    <NavbarBrand>
+                        Redux tutorial
+                    </NavbarBrand>
+                </LinkContainer>
                 <NavbarToggle aria-controls='basic-navbar-nav' />
                 <NavbarCollapse id='basic-navbar-nav'>
                     <Nav className='ms-auto'>
-                        <NavLink as={Link} to='/cart'>
-                            <FaShoppingCart /> Cart
-                        </NavLink>
-                        <NavLink as={Link} to='/login'>
-                            <FaUser /> Sign In
-                        </NavLink>
+                        <LinkContainer to='/login'>
+                            <NavLink>
+                                <FaUser /> Sign In
+                            </NavLink>
+                        </LinkContainer>
                     </Nav>
                 </NavbarCollapse>
             </Container>
