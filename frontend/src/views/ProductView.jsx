@@ -18,7 +18,7 @@ const ProductView = () => {
   
   useEffect(() => {
     const fetchProduct = async () => {
-      const { data } = await axios.get(`http://localhost:5000/api/products/${productId}`);
+      const { data } = await axios.get(`/api/product/${productId}`);
       setProduct(data);
     };
 

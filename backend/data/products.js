@@ -2,7 +2,7 @@ const products = [
   {
     _id: '1',
     name: 'Airpods Wireless Bluetooth Headphones',
-    image: '/data/images/airpods.jpg',
+    image: '/images/airpods.jpg',
     description:
       'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas corporis distinctio provident nam, quam deserunt exercitationem ex ducimus ad natus porro aliquam sit voluptates illo obcaecati a rerum nesciunt voluptatibus.',
     brand: 'Apple',
@@ -15,7 +15,7 @@ const products = [
   {
     _id: '2',
     name: 'iPhone 11 Pro 256GB Memory',
-    image: '/data/images/phone.jpg',
+    image: './images/phone.jpg',
     description:
       'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas corporis distinctio provident',
     brand: 'Apple',
@@ -28,7 +28,7 @@ const products = [
   {
     _id: '3',
     name: 'Cannon EOS 80D DSLR Camera',
-    image: '/data/images/camera.jpg',
+    image: '/images/camera.jpg',
     description:
       'Voluptas corporis distinctio provident nam, quam deserunt exercitationem ex ducimus ad natus porro aliquam sit voluptates illo obcaecati a rerum nesciunt voluptatibus.',
     brand: 'Cannon',
@@ -41,7 +41,7 @@ const products = [
   {
     _id: '4',
     name: 'Sony Playstation 4 Pro White Version',
-    image: '/data/images/playstation.jpg',
+    image: '/images/playstation.jpg',
     description:
       'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
     brand: 'Sony',
@@ -54,7 +54,7 @@ const products = [
   {
     _id: '5',
     name: 'Logitech G-Series Gaming Mouse',
-    image: '/data/images/mouse.jpg',
+    image: '/images/mouse.jpg',
     description:
       'Corporis distinctio provident nam, quam deserunt exercitationem ex ducimus ad natus porro aliquam sit voluptates illo obcaecati a rerum nesciunt voluptatibus.',
     brand: 'Logitech',
@@ -67,7 +67,7 @@ const products = [
   {
     _id: '6',
     name: 'Amazon Echo Dot 3rd Generation',
-    image: '/data/images/alexa.jpg',
+    image: '/images/alexa.jpg',
     description:
       'Quam deserunt exercitationem ex ducimus ad natus porro aliquam sit voluptates illo obcaecati a rerum nesciunt voluptatibus.',
     brand: 'Amazon',
