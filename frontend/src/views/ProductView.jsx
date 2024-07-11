@@ -9,20 +9,18 @@ import {
   Card,
   ListGroupItem
 } from 'react-bootstrap';
-import products from "../products";
+import axios from 'axios';
 
 const ProductView = () => {
   const [product, setProduct] = useState({});
 
   const { id: productId } = useParams();
-  // const product = products.find((prod) => prod._id === productId);
-
+  
   useEffect(() => {
     const fetchProduct = async () => {
-      // const { data } = await axios.get(`/api/products/${productId}`);
-      const data = await products.find((prod) => prod._id === productId);
+      const { data } = await axios.get(`http://localhost:5000/api/products/${productId}`);
       setProduct(data);
-    }
+    };
 
     fetchProduct();
   }, [productId]);
