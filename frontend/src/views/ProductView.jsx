@@ -42,7 +42,7 @@ const ProductView = () => {
               <h3>{product.name}</h3>
             </ListGroupItem>
             <ListGroupItem>
-              <strong>Price: $ {product.price}</strong>
+              <strong>Price: &dollar; {product.price}</strong>
             </ListGroupItem>
           </ListGroup>
         </Col>
@@ -58,7 +58,7 @@ const ProductView = () => {
                     Price:
                   </Col>
                   <Col>
-                    <strong>$ {product.price}</strong>
+                    <strong>&dollar; {product.price}</strong>
                   </Col>
                 </Row>
               </ListGroupItem>

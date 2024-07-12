@@ -17,7 +17,7 @@ const Header = () => {
             <Container>
                 <LinkContainer to='/'>
                     <NavbarBrand>
-                        Redux tutorial
+                        React - Redux example App
                     </NavbarBrand>
                 </LinkContainer>
                 <NavbarToggle aria-controls='basic-navbar-nav' />

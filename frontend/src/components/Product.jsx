@@ -18,15 +18,15 @@ const Product = ({ product }) => {
                 <CardTitle as='div' className='product-title'>
                     <strong>{product.name}</strong>
                 </CardTitle>
-            </Link>
+            </Link><br />
             <CardText as='div'>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
                 Voluptas corporis distinctio provident nam, quam deserunt 
                 exercitationem ex ducimus ad natus porro aliquam sit voluptates 
                 illo obcaecati a rerum nesciunt voluptatibus.
-            </CardText>
+            </CardText><br />
             <CardText as='h3'>
-                &dollar; {product.price}
+                Price: $ {product.price}
             </CardText>
         </CardBody>
     </Card>
