@@ -32,7 +32,7 @@ const ProductView = () => {
 
   return (
     <>
-      <Link className='btn btn-light my-3' to='/'>
+      <Link className='btn btn-light my-4' to='/'>
         Go Back
       </Link>
       { isLoading ? (
@@ -43,22 +43,15 @@ const ProductView = () => {
         </div>
       ) : (
         <Row>
-          <Col md={4}>
+          <Col md={6}>
             <Image src={product.image} alt={product.name} fluid />
           </Col>
-          <Col md={4}>
-            <ListGroup variant='flush'>
-              <ListGroupItem>
-                <h3>{product.name}</h3>
-              </ListGroupItem>
-              <ListGroupItem>
-                <strong>Price: &dollar; {product.price}</strong>
-              </ListGroupItem>
-            </ListGroup>
-          </Col>
-          <Col md={4}>
+          <Col md={6}>
             <Card>
               <ListGroup variant='flush'>
+                <ListGroupItem>
+                  <h3>{product.name}</h3>
+                </ListGroupItem>
                 <ListGroupItem>
                   {product.description}
                 </ListGroupItem>
@@ -68,7 +61,7 @@ const ProductView = () => {
                       Price:
                     </Col>
                     <Col>
-                      <strong>&dollar; {product.price}</strong>
+                      <strong>$ {product.price}</strong>
                     </Col>
                   </Row>
                 </ListGroupItem>
