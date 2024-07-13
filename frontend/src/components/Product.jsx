@@ -26,7 +26,7 @@ const Product = ({ product }) => {
                 illo obcaecati a rerum nesciunt voluptatibus.
             </CardText><br />
             <CardText as='h3'>
-                Price: $ {product.price}
+                Price: ${product.price}
             </CardText>
         </CardBody>
     </Card>

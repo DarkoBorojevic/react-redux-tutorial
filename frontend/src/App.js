@@ -14,7 +14,7 @@ function App() {
           <Container>
             <Outlet />
           </Container>
-        </main>
+        </main><br /><br /><br /><br />
         <Footer />
       </div>
     </>
